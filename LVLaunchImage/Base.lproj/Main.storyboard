@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kHE-6e-JNf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="kHE-6e-JNf" secondAttribute="centerX" id="1Pf-gR-pg5"/>
+                            <constraint firstItem="kHE-6e-JNf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="1uh-8F-JYQ"/>
+                            <constraint firstAttribute="trailing" secondItem="kHE-6e-JNf" secondAttribute="trailing" id="2dg-bm-sMU"/>
+                            <constraint firstAttribute="centerY" secondItem="kHE-6e-JNf" secondAttribute="centerY" id="JwH-px-cId"/>
+                            <constraint firstItem="kHE-6e-JNf" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="aXH-Qc-ZGw"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kHE-6e-JNf" secondAttribute="bottom" id="c7F-2U-dmf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="launchImageView" destination="kHE-6e-JNf" id="ga4-KH-wVu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
